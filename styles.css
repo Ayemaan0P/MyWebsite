@@ -1,0 +1,49 @@
+#gaming h3 {
+  margin-top: 20px;
+}
+
+#gameGuess {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+}
+
+#submitGuess {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#feedback {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#score {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.correct {
+  color: green;
+  animation: fadeIn 1s ease;
+}
+
+.incorrect {
+  color: red;
+  animation: shake 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes shake {
+  0% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(-10px); }
+}
